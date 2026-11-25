@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UDL Foundations: An Interactive Micro-Course</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to course content</a>
+<header>
+<h1>UDL Foundations <span class="pill">Micro-course · about 30 minutes</span></h1>
+<div class="tools" role="group" aria-label="Accessibility settings">
+<button data-a="fs" data-v="-1" aria-label="Decrease text size">A−</button>
+<button data-a="fs" data-v="1" aria-label="Increase text size">A+</button>
+<label>Theme <select id="theme"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option><option value="hc">High contrast</option></select></label>
+<label><input type="checkbox" id="dys"> Easy-read spacing</label>
+<label><input type="checkbox" id="calm"> Reduce motion</label>
+</div>
+<div id="who"></div>
+</header>
+<div class="wrap">
+<nav aria-label="Course navigation"><div class="bar" role="progressbar" aria-label="Course progress" id="pb" aria-valuemin="0" aria-valuemax="100"><i id="pbi"></i></div><ol id="nav"></ol></nav>
+<main id="main" tabindex="-1"></main>
+</div>
+<div class="sr" aria-live="polite" id="live"></div>
+<script src="course.js"></script>
+</body>
+</html>
